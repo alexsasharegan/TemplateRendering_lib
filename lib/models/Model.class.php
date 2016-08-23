@@ -61,7 +61,7 @@ class Model {
   }
 
   # ['prop' => 'type']
-  var $schema = [
+  public $schema = [
     // BOOLEANS
     'deleted'           => 'boolean',
     'used'              => 'boolean',
@@ -126,6 +126,6 @@ class Model {
     'placedOn' => 'date',
   ];
 
-  var $dateFormat = 'Y-m-d H:i:s';
+  public $dateFormat = 'Y-m-d H:i:s';
 
 }
