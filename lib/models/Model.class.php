@@ -1,8 +1,10 @@
 <?php
 
+namespace Models;
+
 class Model {
 
-  function Model($props = []) {
+  function __construct($props = []) {
     if (!empty($props) && $this->isAssoc($props)) {
       $this->setAssoc($props);
     }
